@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  img{
+    max-width: 100%;
+   }
+
+   body{
+    background-color: aliceblue;
+   }
+
+
+   header{
+    position: sticky;
+    background: linear-gradient(blue, white);
+    padding: 3rem;
+   }
+   
+   .btn{
+    background: linear-gradient(white, blue);
+    cursor: pointer;
+    transition: all 2s ease;
+   }
+
+   .btn:hover{
+    background: blue;
+    color: white;
+   }
+   
+   .img-box{
+    animation: from-right 1.5s ease;
+   }
+
+
+   footer{
+    background: linear-gradient(white, blue);
+    color: black;
+    padding: 2rem;
+   }
+
+   display_iframe{
+    animation: from-right 1.5s ease;
+   }
+
+   /*animacion*/
+
+   @keyframes from-right{
+    0%{
+      opacity: 0;
+      transform: translatex(80px);
+    }
+
+    100%{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+   }
